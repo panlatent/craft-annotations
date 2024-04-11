@@ -14,7 +14,7 @@ Features
 
 Requirements
 ------------
-+ >= PHP 8.0.2
++ PHP 8.0.2 or later.
 
 Installation
 ------------
