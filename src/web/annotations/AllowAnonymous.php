@@ -1,6 +1,6 @@
 <?php
 
-namespace panlatent\craft\annotations\web;
+namespace panlatent\craft\annotations\web\annotations;
 
 use craft\web\Controller;
 use JetBrains\PhpStorm\ExpectedValues;

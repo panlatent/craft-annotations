@@ -2,6 +2,11 @@
 
 namespace panlatent\craft\annotations\web;
 
+use panlatent\craft\annotations\web\annotations\AllowAnonymous;
+use panlatent\craft\annotations\web\annotations\CsrfValidation;
+use panlatent\craft\annotations\web\annotations\RequireAcceptsJson;
+use panlatent\craft\annotations\web\annotations\RequireLogin;
+use panlatent\craft\annotations\web\annotations\RequirePostRequest;
 use ReflectionClass;
 use ReflectionMethod;
 use yii\base\Action;
