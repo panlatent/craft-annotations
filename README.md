@@ -73,10 +73,6 @@ The Events Register provides a configuration with annotations to register event 
 + [#RegisterComponentTypes](src%2Fevent%2Fannotations%2FRegisterComponentTypes.php)
 + [#RegisterEvent](src%2Fevent%2Fannotations%2FRegisterEvent.php)
 
-```
-
-
-
 Documentation
 ------------
 
