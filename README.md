@@ -11,7 +11,6 @@ Use it on demand or as a middle layer between your application and Craft/Yii.
 
 Features
 -------
-+ Events Register
 + Controller Access Control
 
 Requirements
@@ -29,49 +28,6 @@ composer require panlatent/craft-annotations
 
 Usages
 ------
-
-### Events Register
-The Events Register provides a configuration with annotations to register event handlers in a unified way.
-
-1. Add `EventsRegister` to application config file `config/app.php` and set `bootstrap`.
-    ```php
-    use panlatent\craft\annotations\event\EventsRegister;
-    
-    return [
-        'bootstrap' => [EventsRegister::class]
-    ]
-    ```
-
-2. Add `events.php` to `config` directory. This configuration file supports 3 methods:
-
-    Function array:
-    ```php
-    <?php
-    return [
-        #[RegisterComponentTypes(Elements::class, Elements::EVENT_REGISTER_ELEMENT_TYPES)]
-        function(): array {
-            return [YourElement::class];
-        },
-    ];
-    ```
-    
-    Class object
-    ```php
-    <?php
-    return new class {};  // or return new YourClass()
-    ```
-    
-    Class config by `Yii::createObject()` / `Craft::createObject()`
-    ```php
-    <?php
-    return ['class' => YourClass::class]
-    ```
-3. Register event using annotations [class demo](demo/EventsConfig.php)
-
-+ [#Bootstrap](src%2Fevent%2Fannotations%2FBootstrap.php)
-+ [#DefineBehaviors](src%2Fevent%2Fannotations%2FDefineBehaviors.php)
-+ [#RegisterComponentTypes](src%2Fevent%2Fannotations%2FRegisterComponentTypes.php)
-+ [#RegisterEvent](src%2Fevent%2Fannotations%2FRegisterEvent.php)
 
 Documentation
 ------------
